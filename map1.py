@@ -86,12 +86,8 @@ fingersX['finger5_e'] = [19, 18, 17]
 fingers_order1 = [fingersX['finger1_b'], fingersX['finger2_b'], fingersX['finger3_b'], fingersX['finger4_b'], fingersX['finger5_b']]
 fingers_order2 = [fingersX['finger5_b'], fingersX['finger4_b'], fingersX['finger3_b'], fingersX['finger2_b'], fingersX['finger1_b']]
 
-povs = [
-    [fingersX['finger2_b'], fingersX['finger3_b'], fingersX['finger4_b'], fingersX['finger5_b']],
-    [fingersX['finger5_b'], fingersX['finger4_b'], fingersX['finger3_b'], fingersX['finger2_b']]
-]
-
-
-palmX_list = [0, 1, 5, 9, 13, 17]
-
 fingers = ['index_Finger', 'middle_Finger', 'ring_Finger', 'little_Finger', 'Thumb']
+
+
+# palm index
+palmX_list = [0, 1, 5, 9, 13, 17]
