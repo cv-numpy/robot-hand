@@ -1,3 +1,5 @@
+# calculation with xy coordinates of landmark points
+
 import numpy as np
 
 def normV(vector):
