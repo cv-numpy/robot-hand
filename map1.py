@@ -1,49 +1,6 @@
 '''
 Index of Landmarks
 '''
-# Fingers #
-fingersX = dict()
-# oder A
-fingersX['finger1_a'] = [4, 3, 2, 1]
-fingersX['finger2_a'] = [8, 7, 6, 5]
-fingersX['finger3_a'] = [12, 11, 10, 9]
-fingersX['finger4_a'] = [16, 15, 14, 13]
-fingersX['finger5_a'] = [20, 19, 18, 17]
-# order B
-fingersX['finger1_b'] = [1, 2, 3, 4]
-fingersX['finger2_b'] = [5, 6, 7, 8]
-fingersX['finger3_b'] = [9, 10, 11, 12]
-fingersX['finger4_b'] = [13, 14, 15, 16]
-fingersX['finger5_b'] = [17, 18, 19, 20]
-# order C
-fingersX['finger1_c'] = [4, 3, 2]
-fingersX['finger2_c'] = [8, 7, 6]
-fingersX['finger3_c'] = [12, 11, 10]
-fingersX['finger4_c'] = [16, 15, 14]
-fingersX['finger5_c'] = [20, 19, 18]
-# order D
-fingersX['finger1_d'] = [2, 3, 4]
-fingersX['finger2_d'] = [6, 7, 8]
-fingersX['finger3_d'] = [10, 11, 12]
-fingersX['finger4_d'] = [14, 15, 16]
-fingersX['finger5_d'] = [18, 19, 20]
-# order E
-fingersX['finger1_e'] = [3, 2, 1]
-fingersX['finger2_e'] = [7, 6, 5]
-fingersX['finger3_e'] = [11, 10, 9]
-fingersX['finger4_e'] = [15, 14, 13]
-fingersX['finger5_e'] = [19, 18, 17]
-
-fingers_order1 = [fingersX['finger1_b'], fingersX['finger2_b'], fingersX['finger3_b'], fingersX['finger4_b'], fingersX['finger5_b']]
-fingers_order2 = [fingersX['finger5_b'], fingersX['finger4_b'], fingersX['finger3_b'], fingersX['finger2_b'], fingersX['finger1_b']]
-
-povs = [
-    [fingersX['finger2_b'], fingersX['finger3_b'], fingersX['finger4_b'], fingersX['finger5_b']],
-    [fingersX['finger5_b'], fingersX['finger4_b'], fingersX['finger3_b'], fingersX['finger2_b']]
-]
-
-
-palmX_list = [0, 1, 5, 9, 13, 17]
 
 # Landmarks Orders #
 marksX = dict()
@@ -92,5 +49,49 @@ marksX['4'] = 'Thumb_head'
 marksX['3'] = 'Thumb_head_middle'
 marksX['2'] = 'Thumb_end_middle'
 marksX['1'] = 'Thumb_end'
+
+# Fingers #
+fingersX = dict()
+# oder A
+fingersX['finger1_a'] = [4, 3, 2, 1]
+fingersX['finger2_a'] = [8, 7, 6, 5]
+fingersX['finger3_a'] = [12, 11, 10, 9]
+fingersX['finger4_a'] = [16, 15, 14, 13]
+fingersX['finger5_a'] = [20, 19, 18, 17]
+# order B
+fingersX['finger1_b'] = [1, 2, 3, 4]
+fingersX['finger2_b'] = [5, 6, 7, 8]
+fingersX['finger3_b'] = [9, 10, 11, 12]
+fingersX['finger4_b'] = [13, 14, 15, 16]
+fingersX['finger5_b'] = [17, 18, 19, 20]
+# order C
+fingersX['finger1_c'] = [4, 3, 2]
+fingersX['finger2_c'] = [8, 7, 6]
+fingersX['finger3_c'] = [12, 11, 10]
+fingersX['finger4_c'] = [16, 15, 14]
+fingersX['finger5_c'] = [20, 19, 18]
+# order D
+fingersX['finger1_d'] = [2, 3, 4]
+fingersX['finger2_d'] = [6, 7, 8]
+fingersX['finger3_d'] = [10, 11, 12]
+fingersX['finger4_d'] = [14, 15, 16]
+fingersX['finger5_d'] = [18, 19, 20]
+# order E
+fingersX['finger1_e'] = [3, 2, 1]
+fingersX['finger2_e'] = [7, 6, 5]
+fingersX['finger3_e'] = [11, 10, 9]
+fingersX['finger4_e'] = [15, 14, 13]
+fingersX['finger5_e'] = [19, 18, 17]
+
+fingers_order1 = [fingersX['finger1_b'], fingersX['finger2_b'], fingersX['finger3_b'], fingersX['finger4_b'], fingersX['finger5_b']]
+fingers_order2 = [fingersX['finger5_b'], fingersX['finger4_b'], fingersX['finger3_b'], fingersX['finger2_b'], fingersX['finger1_b']]
+
+povs = [
+    [fingersX['finger2_b'], fingersX['finger3_b'], fingersX['finger4_b'], fingersX['finger5_b']],
+    [fingersX['finger5_b'], fingersX['finger4_b'], fingersX['finger3_b'], fingersX['finger2_b']]
+]
+
+
+palmX_list = [0, 1, 5, 9, 13, 17]
 
 fingers = ['index_Finger', 'middle_Finger', 'ring_Finger', 'little_Finger', 'Thumb']
