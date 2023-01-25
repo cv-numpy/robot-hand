@@ -94,25 +94,3 @@ marksX['2'] = 'Thumb_end_middle'
 marksX['1'] = 'Thumb_end'
 
 fingers = ['index_Finger', 'middle_Finger', 'ring_Finger', 'little_Finger', 'Thumb']
-
-
-
-# Layers #
-layersX = dict()
-rangePoints_21 = range(21)
-PALM_POINTS_IDX = [0, 5, 9, 13, 17]
-
-layers1 = [8, 12, 16, 20]
-layers2 = [7, 11, 15, 19]
-layers3 = [6, 10, 14, 18]
-layers4 = [5,  9, 13, 17]
-
-def layersX():
-    pass
-
-measureX = dict()
-measure = []
-measureX['left_or_right_hand'] = 0
-measureX['xy_'] = 1
-measureX['clock_wise'] = 2
-measureX['T_ratio'] = 3
