@@ -1,5 +1,6 @@
-# HashMap OR NumpyArray May Somehow Performs Better Than Python List 20221209
-
+'''
+Index of Landmarks
+'''
 # Fingers #
 fingersX = dict()
 # oder A
