@@ -2,7 +2,7 @@
 
 <img width="480" alt="Capture" src="https://user-images.githubusercontent.com/46214170/214755356-f754cc4d-161e-4035-9ba4-cc45d272ed51.PNG">
 
-contact: 
+Contact us: 
 qufuboby@gmail.com
 
 Fifth generation Robotic Hand
