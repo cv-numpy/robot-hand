@@ -9,7 +9,7 @@ import palm
 import finger
 import draw_index
 
-class PointsIndex:
+class Feature:
     def __init__(self, camera_index, framework_name = 'mediapipe'):
         self.camX = camera_index
         camera = VideoCapture(self.camX)
@@ -79,7 +79,7 @@ class PointsIndex:
 
 
 def test():
-    real1 = PointsIndex(0)
+    real1 = Feature(0)
     import cv2 as cv
     cv.imshow('Demo', real1.demo_hand)
     cv.waitKey(1500)
