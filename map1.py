@@ -89,5 +89,5 @@ fingers_order2 = [fingersX['finger5_b'], fingersX['finger4_b'], fingersX['finger
 fingers = ['index_Finger', 'middle_Finger', 'ring_Finger', 'little_Finger', 'Thumb']
 
 
-# palm index
+# palm points index
 palmX_list = [0, 1, 5, 9, 13, 17]
