@@ -9,7 +9,6 @@ import palm
 import finger_layer_iter
 import draw_index
 
-
 class PointsIndex:
     def __init__(self, camera_index, framework_name = 'mediapipe'):
         self.camX = camera_index
@@ -38,6 +37,7 @@ class PointsIndex:
 
             self.finger = dict()
             self.finger_layer = dict()
+            self.two_points = dict()
 
     # get 2d infomation
     def scalars(self):
@@ -71,7 +71,7 @@ class PointsIndex:
                 self.finger['index'] = index_finger
                 self.finger['middle'] = middle_finger
                 self.finger['ring'] = ring_finger
-                self.finger['litte'] = little_finger
+                self.finger['little'] = little_finger
 
                 # Finger Layers
                 layer1, layer2, layer3, layer4 = finger_layer_iter.layers(self.pixel_xy)
@@ -96,12 +96,12 @@ class PointsIndex:
             self.mask = bitwise_or(mask_stick, mask_palm)
 
     def neighbor_line(self):
-        self.two_points = dict()
-        self.two_points['thumb'] = zip( self.finger['thumb'][:-1], self.finger['thumb'][1:] )
-        self.two_points['index'] = zip( self.finger['index'][:-1], self.finger['index'][1:] )
-        self.two_points['middle'] = zip( self.finger['middle'][:-1], self.finger['middle'][1:] )
-        self.two_points['ring'] = zip( self.finger['ring'][:-1], self.finger['ring'][1:] )
-        self.two_points['little'] = zip( self.finger['little'][:-1], self.finger['little'][1:] )
+        if self.number == 1:
+            self.two_points['thumb'] = zip( self.finger['thumb'][:-1], self.finger['thumb'][1:] )
+            self.two_points['index'] = zip( self.finger['index'][:-1], self.finger['index'][1:] )
+            self.two_points['middle'] = zip( self.finger['middle'][:-1], self.finger['middle'][1:] )
+            self.two_points['ring'] = zip( self.finger['ring'][:-1], self.finger['ring'][1:] )
+            self.two_points['little'] = zip( self.finger['little'][:-1], self.finger['little'][1:] )
 
 
 
@@ -118,6 +118,7 @@ def test():
         while time2 - time1 < 30:
             real1.scalars()
             real1.get_mask()
+            real1.neighbor_line()
             if real1.number == 1:
                 t_ratios.append(real1.t_ratio)
                 cv.imshow('Demo', real1.mask)
