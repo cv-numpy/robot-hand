@@ -80,9 +80,6 @@ class PointsIndex:
                 self.finger_layer['head_middle'] = layer2
                 self.finger_layer['end_middle'] = layer3
                 self.finger_layer['end_middle'] = layer4
-
-                self.diffs_2d, self.fingers_middles = finger_layer_iter.finger_layers(self.pixel_xy)
-                self.ratios = finger_layer_iter.diffs_ratio_13_23(self.diffs_2d)
             else:
                 pass
 
