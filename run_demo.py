@@ -111,13 +111,11 @@ def test():
     if real1.camera_ready:
         import time
         time1 = time.time(); time2 = time1
-        t_ratios = []
+
         while time2 - time1 < 30:
             real1.scalars()
             real1.get_mask()
-            real1.neighbor_line()
             if real1.number == 1:
-                t_ratios.append(real1.t_ratio)
                 cv.imshow('Demo', real1.mask)
 
             if cv.waitKey(1) == ord('q'):
