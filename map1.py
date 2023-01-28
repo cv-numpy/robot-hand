@@ -51,42 +51,59 @@ marksX['2'] = 'Thumb_end_middle'
 marksX['1'] = 'Thumb_end'
 
 # Fingers #
-fingersX = dict()
-# oder A
-fingersX['finger1_a'] = [4, 3, 2, 1]
-fingersX['finger2_a'] = [8, 7, 6, 5]
-fingersX['finger3_a'] = [12, 11, 10, 9]
-fingersX['finger4_a'] = [16, 15, 14, 13]
-fingersX['finger5_a'] = [20, 19, 18, 17]
-# order B
-fingersX['finger1_b'] = [1, 2, 3, 4]
-fingersX['finger2_b'] = [5, 6, 7, 8]
-fingersX['finger3_b'] = [9, 10, 11, 12]
-fingersX['finger4_b'] = [13, 14, 15, 16]
-fingersX['finger5_b'] = [17, 18, 19, 20]
-# order C
-fingersX['finger1_c'] = [4, 3, 2]
-fingersX['finger2_c'] = [8, 7, 6]
-fingersX['finger3_c'] = [12, 11, 10]
-fingersX['finger4_c'] = [16, 15, 14]
-fingersX['finger5_c'] = [20, 19, 18]
-# order D
-fingersX['finger1_d'] = [2, 3, 4]
-fingersX['finger2_d'] = [6, 7, 8]
-fingersX['finger3_d'] = [10, 11, 12]
-fingersX['finger4_d'] = [14, 15, 16]
-fingersX['finger5_d'] = [18, 19, 20]
-# order E
-fingersX['finger1_e'] = [3, 2, 1]
-fingersX['finger2_e'] = [7, 6, 5]
-fingersX['finger3_e'] = [11, 10, 9]
-fingersX['finger4_e'] = [15, 14, 13]
-fingersX['finger5_e'] = [19, 18, 17]
+# default direction: use the direction that 
+# from tip of finger point to the center of palm
+default_direction = True
 
-fingers_order1 = [fingersX['finger1_b'], fingersX['finger2_b'], fingersX['finger3_b'], fingersX['finger4_b'], fingersX['finger5_b']]
-fingers_order2 = [fingersX['finger5_b'], fingersX['finger4_b'], fingersX['finger3_b'], fingersX['finger2_b'], fingersX['finger1_b']]
+if default_direction:
+    fingersX_a = dict()
+    # oder A
+    fingersX_a['thumb'] = [4, 3, 2, 1]
+    fingersX_a['index'] = [8, 7, 6, 5]
+    fingersX_a['middle'] = [12, 11, 10, 9]
+    fingersX_a['ring'] = [16, 15, 14, 13]
+    fingersX_a['little'] = [20, 19, 18, 17]
 
-fingers = ['index_Finger', 'middle_Finger', 'ring_Finger', 'little_Finger', 'Thumb']
+    fingersX_b = dict()
+    # order B
+    fingersX_b['thumb'] = [4, 3, 2]
+    fingersX_b['index'] = [8, 7, 6]
+    fingersX_b['middle'] = [12, 11, 10]
+    fingersX_b['ring'] = [16, 15, 14]
+    fingersX_b['little'] = [20, 19, 18]
+
+    fingersX_c = dict()
+    # order C
+    fingersX_c['thumb'] = [3, 2, 1]
+    fingersX_c['index'] = [7, 6, 5]
+    fingersX_c['middle'] = [11, 10, 9]
+    fingersX_c['ring'] = [15, 14, 13]
+    fingersX_c['little'] = [19, 18, 17]
+
+else:
+    fingersX_g = dict()
+    # order G
+    fingersX_g['thumb'] = [1, 2, 3, 4]
+    fingersX_g['index'] = [5, 6, 7, 8]
+    fingersX_g['middle'] = [9, 10, 11, 12]
+    fingersX_g['ring'] = [13, 14, 15, 16]
+    fingersX_g['little'] = [17, 18, 19, 20]
+    
+    fingersX_h = dict()
+    # order H
+    fingersX_h['thumb'] = [1, 2, 3]
+    fingersX_h['index'] = [5, 6, 7]
+    fingersX_h['middle'] = [9, 10, 11]
+    fingersX_h['ring'] = [13, 14, 15]
+    fingersX_h['little'] = [17, 18, 19]
+    
+    fingersX_i = dict()
+    # order i
+    fingersX_i['thumb'] = [2, 3, 4]
+    fingersX_i['index'] = [6, 7, 8]
+    fingersX_i['middle'] = [10, 11, 12]
+    fingersX_i['ring'] = [14, 15, 16]
+    fingersX_i['little'] = [18, 19, 20]
 
 
 # palm points index
